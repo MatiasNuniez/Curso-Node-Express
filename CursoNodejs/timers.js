@@ -1,0 +1,7 @@
+setInterval(() => {
+    
+}, interval)
+
+setTimeout(() => {
+    
+}, timeout);

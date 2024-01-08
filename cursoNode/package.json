@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "fs": "^0.0.1-security"
+  },
+  "dependencies": {
+    "npx": "^10.2.2"
+  }
+}

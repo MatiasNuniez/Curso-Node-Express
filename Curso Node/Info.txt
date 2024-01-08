@@ -1,0 +1,28 @@
+nodejs:entorno de ejecucion de javascriopt fuera del navegador
+nodejs funciona con un eventloop, que lo que hace es estar todo el tiempo ejecutando el event queue asincronicamente
+Siempre va a tratar de resolver los procesos rapido y sino puede resolverlo rapido lo manda al thread pool y aca se gestiona de forma asincrona q no traba el hilo principal y cada hilo se encarga de su propios procesos lentos
+EventLoop se maneja en monohilo y lo malo que se maneje en monohilo es que si no manejamos bien los errores se puede parar todo nuestro programa por 1 error.
+Metodos: Get:Recoger informacion de un elemetno del server, Put:Remplaza informacion del servidor, Post:Aniandir informacion al server, Patch:Editar una parte de la informacion.Delete:Eliminar informacion del servidor. Options:Pedir informacion de los metodos(get,put,patch,delete)
+Cabeceras:informacion contextual de la peticion. Por ejemplo en el request:(POST,PUT,PATCH) podemos tener autenticacion, cache, indicaciones, condiciones, cors, cookies
+cookies:Compartir informacion entre peticiones
+cors:cross origin resource sharing(poder o no poder manejar informacion por fuera de nuestro servidor)
+Accept:Define el tipo de contenido q acepta el servidor. accept-charset
+autenticacion:Aegura q pudo pedir cosas al servidor. authorizacion
+cache: almacenamiento temporal:Gestionar durante cuanto tiempo l arespuesta sera la misma
+
+ESTADOS:Numero q indica q paso con la peticion.
+200:ok Cuando 200 quiere decir que todo esta bien
+300:Moved 300 redirigido a otro sitio
+400:Errores del cliente
+Erores del servidor:500:internal server error sin dar ningun detalle al cliente por seguridad
+
+Bodyparser:Es una extencion modulo de express que nos permite trabajar con el body de la peticion mas sencillo.
+
+
+API:Construcciones disponibles en lenguajes que le permiten a los desarrolladores que le permiten crear funcionalidades complejas de una manera simple
+Apis de terceros: Por ejemplo apis de youtubem, facebook
+
+REST:Tecnica de arquitectura de software. Cuando creemos nuestra api tiene que quedar standarizada. 
+process.env.NOMBREVARIABLEENMAYUSCULA Y EN CASO DE DOS PALABRAS NOMBREVARIABLEENMAYUSCULA_SEGUNDONOMBRE, LO PASAMOS POR CONSOLA O LO DEFINIMOS POR .ENV
+
+callback: sirven para jecutarse cuando termine una funcion
